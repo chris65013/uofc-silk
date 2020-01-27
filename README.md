@@ -1,2 +1,3 @@
-# uofc-silk
-Project repository for University of Calgary - ENGO 551 - Winter 2020 by Chris Lin
+# Project 0
+
+ENGO 551 - Adv. Topics on Geospatial Technologies

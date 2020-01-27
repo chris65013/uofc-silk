@@ -24,10 +24,20 @@ body {
 
 /*- - - Background image and overlay - - -*/
 .header {
-  background-image: url('https://pbs.twimg.com/media/EEogNjwUwAATlN7?format=jpg&name=4096x4096');
-  background-size: cover;
   background-position: center;
   position: relative;
+}
+.about, .home, .contact{
+  background-size: cover;
+}
+.home {
+  background-image: url('https://pbs.twimg.com/media/EEogNjwUwAATlN7?format=jpg&name=4096x4096');
+}
+.about {
+  background-image: url('https://pbs.twimg.com/media/EM_aMUjUwAAOEP4?format=jpg&name=4096x4096');
+}
+.contact {
+  background-image: url('https://pbs.twimg.com/media/EF1VjdsUcAAkKoT?format=jpg&name=4096x4096');
 }
 .overlay {
   position: absolute;
@@ -44,14 +54,33 @@ body {
   transform: translate(-50%, -55%);
   text-align: center;
 }
+/* text and header setting */
 .description h1 {
   color: #c4b7a6 ;
 }
+.description h2 {
+	color: #c4b7a6 ;
+  }
 .description p {
   color: #fff;
   font-size: 1.1rem;
   line-height: 1.5;
 }
+/*table and list settings*/
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container{
+	text-align: center;
+}
+
 /*Other image classes*/
 .img-circle {
     border-radius: 50%;
@@ -89,6 +118,19 @@ body {
    top: 0;
    width: 80%;
 }
+/*Nesting speficially for about.html*/
+div {
+text-align: center;}
+	div h3 {
+	font-size: 16 px;}
+	
+	div table {
+		width: 75%}
+
+
+
+
+/*@media specific setting for mobile sites*/
 @media (max-width: 575.98px) {
   .description {
     left: 0;
@@ -100,6 +142,7 @@ body {
   }
   
   .description h2 {
+	color: #c4b7a6 ;
     font-size: 2em;
   }
   
